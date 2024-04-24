@@ -10,6 +10,16 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       title: 'Todo List',
+      template: 'src/index.html',
     }),
+    
   ],
+  module: {
+    rules: [
+      {
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"],
+      },
+    ],
+  },
 };

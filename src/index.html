@@ -3,9 +3,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Todo List</title>
+    <script src="https://kit.fontawesome.com/d219c09b4c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
+    <div class="content" id="content">
+        <div id="header" >
+            <div class="logo">
+                <p><i class="fa-solid fa-check-double padding-right"></i>ToDo</p>
+            </div>
+        </div>
+        <nav id="sidebar-menu">
+            <div class="menu-links">
+                <div class="link">
+                    <i class="fa-regular fa-calendar-days padding-right"></i>
+                    <p>All</p>
+                </div>
+                <div class="link">
+                    <i class="fa-solid fa-calendar-day padding-right"></i>
+                    <p>Today</p>
+                </div>
+                <div class="link">
+                    <i class="fa-solid fa-calendar-week padding-right"></i>
+                    <p>Week</p>
+                </div>
+                <div class="link">
+                    <i class="fa-regular fa-calendar-xmark padding-right"></i>
+                    <p>Important</p>
+                </div>
+                <div class="link">
+                    <i class="fa-solid fa-calendar-check padding-right"></i>
+                    <p>Completed</p>
+                </div>
+            </div>
+            <div class="nav-projects">
+                <div class="nav-projects-title">
+                    <p>Projects (<span class="projects-count">0</span>)</p>
+                    <i class="fa-solid fa-circle-plus"></i>
+                </div>
+            </div>
+            <footer>
+                <p>☽ Crafted by Noobia</p>
+            </footer>
+        </nav>
+        <main id="main" class="contract-main">
+            <div class="main-title-div">
+                <i class="main-title-icon fa-regular fa-calendar-days padding-right"></i>
+                <h1 class="main-title-text">All</h1>
+            </div>
+
+            <div class="tasks-div">
+                <div class="tasks-title-div">
+                    <div class="task-title">
+                        <p>Tasks (<span class="tasks-count">0</span>)</p>
+                        
+                    </div>
+                    <i class="fa-solid fa-circle-plus"></i>
+                </div>
+            </div>
+        </main>
+        <div class="modal">
+            <div class="modal-card">
+                <div class="modal-header">
+                    <h2>Add Project</h2>
+                    <i class="fa-solid fa-circle-xmark"></i>
+                </div>
+                <div class="modal-content">
+                    <form id="form" name="form" method="POST" class>
+                        <div>
+                            <label id="modal-content-label" for="modal-title">Title<span class="little-star">*</span></label>
+                        </div>
+                        <div class="radio-form">
+                            <p>Icon</p>
+                            <div class="projects-icon">
+                                <label for="radio-before">
+                                    <span class="radio-input">
+                                        <input type="radio" id="pencil" class="Icon" name="projectFormIcon" value="pencil">
+                                        <span class="radio-control"><i class="fa-solid fa-pencil"></i></span>
+                                    </span>
+                                </label>
+                                <label for="radio-before">
+                                    <span class="radio-input">
+                                        <input type="radio" id="pencil" class="Icon" name="projectFormIcon" value="pencil">
+                                        <span class="radio-control"><i class="fa-solid fa-pencil"></i></span>
+                                    </span>
+                                </label>
+                                <label for="radio-before">
+                                    <span class="radio-input">
+                                        <input type="radio" id="pencil" class="Icon" name="projectFormIcon" value="pencil">
+                                        <span class="radio-control"><i class="fa-solid fa-pencil"></i></span>
+                                    </span>
+                                </label>
+                                <label for="radio-before">
+                                    <span class="radio-input">
+                                        <input type="radio" id="pencil" class="Icon" name="projectFormIcon" value="pencil">
+                                        <span class="radio-control"><i class="fa-solid fa-pencil"></i></span>
+                                    </span>
+                                </label>
+                                <label for="radio-before">
+                                    <span class="radio-input">
+                                        <input type="radio" id="pencil" class="Icon" name="projectFormIcon" value="pencil">
+                                        <span class="radio-control"><i class="fa-solid fa-pencil"></i></span>
+                                    </span>
+                                </label>
+                                <label for="radio-before">
+                                    <span class="radio-input">
+                                        <input type="radio" id="pencil" class="Icon" name="projectFormIcon" value="pencil">
+                                        <span class="radio-control"><i class="fa-solid fa-pencil"></i></span>
+                                    </span>
+                                </label>
+                                <label for="radio-before">
+                                    <span class="radio-input">
+                                        <input type="radio" id="pencil" class="Icon" name="projectFormIcon" value="pencil">
+                                        <span class="radio-control"><i class="fa-solid fa-pencil"></i></span>
+                                    </span>
+                                </label>
+                                <label for="radio-before">
+                                    <span class="radio-input">
+                                        <input type="radio" id="pencil" class="Icon" name="projectFormIcon" value="pencil">
+                                        <span class="radio-control"><i class="fa-solid fa-pencil"></i></span>
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
     
+            </div>
+        </div>
+    </div>
 </body>
 </html>
