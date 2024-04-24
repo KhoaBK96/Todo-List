@@ -64,16 +64,17 @@
                 </div>
             </div>
         </main>
-        <div class="modal">
+        <div id="modal">
             <div class="modal-card">
                 <div class="modal-header">
                     <h2>Add Project</h2>
-                    <i class="fa-solid fa-circle-xmark"></i>
+                    <i class="fa-solid fa-circle-xmark close-modal"></i>
                 </div>
                 <div class="modal-content">
                     <form id="form" name="form" method="POST" class>
-                        <div>
+                        <div id="modal-title-div">
                             <label id="modal-content-label" for="modal-title">Title<span class="little-star">*</span></label>
+                            <input type="text" name="modal-title" id="modal-title">
                         </div>
                         <div class="radio-form">
                             <p>Icon</p>
@@ -86,47 +87,51 @@
                                 </label>
                                 <label for="radio-before">
                                     <span class="radio-input">
-                                        <input type="radio" id="pencil" class="Icon" name="projectFormIcon" value="pencil">
-                                        <span class="radio-control"><i class="fa-solid fa-pencil"></i></span>
+                                        <input type="radio" id="book" class="Icon" name="projectFormIcon" value="book">
+                                        <span class="radio-control"><i class="fa-solid fa-book"></i></span>
                                     </span>
                                 </label>
                                 <label for="radio-before">
                                     <span class="radio-input">
-                                        <input type="radio" id="pencil" class="Icon" name="projectFormIcon" value="pencil">
-                                        <span class="radio-control"><i class="fa-solid fa-pencil"></i></span>
+                                        <input type="radio" id="tools" class="Icon" name="projectFormIcon" value="tools">
+                                        <span class="radio-control"><i class="fa-solid fa-screwdriver-wrench"></i></span>
                                     </span>
                                 </label>
                                 <label for="radio-before">
                                     <span class="radio-input">
-                                        <input type="radio" id="pencil" class="Icon" name="projectFormIcon" value="pencil">
-                                        <span class="radio-control"><i class="fa-solid fa-pencil"></i></span>
+                                        <input type="radio" id="ball" class="Icon" name="projectFormIcon" value="ball">
+                                        <span class="radio-control"><i class="fa-solid fa-volleyball"></i></span>
                                     </span>
                                 </label>
                                 <label for="radio-before">
                                     <span class="radio-input">
-                                        <input type="radio" id="pencil" class="Icon" name="projectFormIcon" value="pencil">
-                                        <span class="radio-control"><i class="fa-solid fa-pencil"></i></span>
+                                        <input type="radio" id="sack" class="Icon" name="projectFormIcon" value="sack">
+                                        <span class="radio-control"><i class="fa-solid fa-sack-dollar"></i></span>
                                     </span>
                                 </label>
                                 <label for="radio-before">
                                     <span class="radio-input">
-                                        <input type="radio" id="pencil" class="Icon" name="projectFormIcon" value="pencil">
-                                        <span class="radio-control"><i class="fa-solid fa-pencil"></i></span>
+                                        <input type="radio" id="pizza" class="Icon" name="projectFormIcon" value="pizza">
+                                        <span class="radio-control"><i class="fa-solid fa-pizza-slice"></i></span>
                                     </span>
                                 </label>
                                 <label for="radio-before">
                                     <span class="radio-input">
-                                        <input type="radio" id="pencil" class="Icon" name="projectFormIcon" value="pencil">
-                                        <span class="radio-control"><i class="fa-solid fa-pencil"></i></span>
+                                        <input type="radio" id="suitcase" class="Icon" name="projectFormIcon" value="suitcase">
+                                        <span class="radio-control"><i class="fa-solid fa-suitcase-rolling"></i></span>
                                     </span>
                                 </label>
                                 <label for="radio-before">
                                     <span class="radio-input">
-                                        <input type="radio" id="pencil" class="Icon" name="projectFormIcon" value="pencil">
-                                        <span class="radio-control"><i class="fa-solid fa-pencil"></i></span>
+                                        <input type="radio" id="gift" class="Icon" name="projectFormIcon" value="gift">
+                                        <span class="radio-control"><i class="fa-solid fa-gift"></i></span>
                                     </span>
                                 </label>
                             </div>
+                        </div>
+                        <div class="modal-buttons">
+                            <button class="modal-cancel">Cancel</button>
+                            <button class="modal-add">Add</button>
                         </div>
                     </form>
                 </div>

@@ -127,3 +127,128 @@ footer{
 .task-title{
     display: flex;
 }
+
+/* modal */
+#modal{
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+}
+
+.modal-content{
+    display: flex;
+    flex-direction: column;
+    padding: 25px 20px;
+}
+
+.modal-card{
+    margin: 15% auto;
+    position: relative;
+    max-width: 400px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: rgba(46, 46, 46, 0.2) 0px 2px 8px 0px;
+}
+
+.modal-header{
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(90deg, var(--aqua) 0%, var(--light-aqua) 100%);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.modal-header>h2{
+    padding: 20px;
+    color: var(--white);
+}
+
+.close-modal{
+    margin: 10px 20px;
+    font-size: 20px;
+}
+
+.little-star{
+    color: var(--red);
+}
+
+#modal-title-div{
+    
+}
+
+#modal-content-label{
+    color: var(--dark-grey);
+}
+
+#modal-title{
+    width: 100%;
+    margin: 5px 0 20px 0;
+    padding: 10px;
+    border: 1px solid var(--grey);
+    border-radius: 3px;
+}
+
+.radio-form{
+    margin-bottom: 10px;
+   
+}
+
+.projects-icon{
+    border-bottom: 1px solid var(--grey);
+    padding-top: 10px;
+    padding-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+.radio-control{
+    display: inline-block;
+    border: 1px solid var(--grey);
+    border-radius: 5px;
+    width: 41px;
+    font-size: 25px;
+    padding: 5px 0;
+    cursor: pointer;
+    text-align: center;
+}
+
+.project-icons i {
+    width: 40px;
+}
+
+.Icon{
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.radio-form>p{
+    color: var(--dark-grey);
+}
+
+.modal-buttons{
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+    margin-top: 25px;
+}
+
+.modal-buttons button{
+    padding: 10px 20px;
+    border: 0.5px solid var(--grey);
+    border-radius: 5px;
+}
+
+.modal-cancel{
+    background: var(--white);
+    color: var(--dark-grey);
+}
+
+.modal-add{
+    background: var(--light-aqua);
+    color: var(--white);
+}
