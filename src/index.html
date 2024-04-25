@@ -64,69 +64,118 @@
                 </div>
             </div>
         </main>
-        <div id="modal">
+        <div id="modal" >
             <div class="modal-card">
                 <div class="modal-header">
                     <h2>Add Project</h2>
                     <i class="fa-solid fa-circle-xmark close-modal"></i>
                 </div>
                 <div class="modal-content">
-                    <form id="form" name="form" method="POST" class>
+                    <p class="project-deletion-text hide">
+                        Are you sure?
+                        <br>
+                        <br>
+                        Project
+                        <span class="project-deletion-title">dasds</span>
+                         will be gone forever!
+                    </p> 
+                    <div class="info-div">
+                        <div class="task-title-div">
+                            <p class="info-title">Title:</p>
+                            <p class="info-task-title">dsad</p>
+                        </div>
+                        <div class="task-description-div">
+                            <p class="info-description">Description:</p>
+                            <p class="info-task-description">dsad</p>
+                        </div>
+                        <div class="task-due-date-div">
+                            <p class="info-due-date">Due-date:</p>
+                            <p class="info-task-due-date">dsad</p>
+                        </div>
+                        <div class="task-priority-div">
+                            <p class="info-priority">Priority:</p>
+                            <p class="info-task-priority">dsad</p>
+                        </div>
+                        <div class="task-project-div">
+                            <p class="info-project">Project:</p>
+                            <p class="info-task-project">dsad</p>
+                        </div>
+                    </div>   
+                    <form id="form" name="form" method="POST" class="hide">
                         <div id="modal-title-div">
                             <label id="modal-content-label" for="modal-title">Title<span class="little-star">*</span></label>
                             <input type="text" name="modal-title" id="modal-title">
                         </div>
-                        <div class="radio-form">
+                        <div class="radio-form hide">
                             <p>Icon</p>
                             <div class="projects-icon">
                                 <label for="radio-before">
                                     <span class="radio-input">
                                         <input type="radio" id="pencil" class="Icon" name="projectFormIcon" value="pencil">
-                                        <span class="radio-control"><i class="fa-solid fa-pencil"></i></span>
+                                        <span class="radio-control" id="pencil"><i class="fa-solid fa-pencil"></i></span>
                                     </span>
                                 </label>
                                 <label for="radio-before">
                                     <span class="radio-input">
                                         <input type="radio" id="book" class="Icon" name="projectFormIcon" value="book">
-                                        <span class="radio-control"><i class="fa-solid fa-book"></i></span>
+                                        <span class="radio-control" id="book"><i class="fa-solid fa-book"></i></span>
                                     </span>
                                 </label>
                                 <label for="radio-before">
                                     <span class="radio-input">
                                         <input type="radio" id="tools" class="Icon" name="projectFormIcon" value="tools">
-                                        <span class="radio-control"><i class="fa-solid fa-screwdriver-wrench"></i></span>
+                                        <span class="radio-control" id="tools"><i class="fa-solid fa-screwdriver-wrench"></i></span>
                                     </span>
                                 </label>
                                 <label for="radio-before">
                                     <span class="radio-input">
                                         <input type="radio" id="ball" class="Icon" name="projectFormIcon" value="ball">
-                                        <span class="radio-control"><i class="fa-solid fa-volleyball"></i></span>
+                                        <span class="radio-control" id="ball"><i class="fa-solid fa-volleyball"></i></span>
                                     </span>
                                 </label>
                                 <label for="radio-before">
                                     <span class="radio-input">
                                         <input type="radio" id="sack" class="Icon" name="projectFormIcon" value="sack">
-                                        <span class="radio-control"><i class="fa-solid fa-sack-dollar"></i></span>
+                                        <span class="radio-control" id="sack"><i class="fa-solid fa-sack-dollar"></i></span>
                                     </span>
                                 </label>
                                 <label for="radio-before">
                                     <span class="radio-input">
                                         <input type="radio" id="pizza" class="Icon" name="projectFormIcon" value="pizza">
-                                        <span class="radio-control"><i class="fa-solid fa-pizza-slice"></i></span>
+                                        <span class="radio-control" id="pizza"><i class="fa-solid fa-pizza-slice"></i></span>
                                     </span>
                                 </label>
                                 <label for="radio-before">
                                     <span class="radio-input">
                                         <input type="radio" id="suitcase" class="Icon" name="projectFormIcon" value="suitcase">
-                                        <span class="radio-control"><i class="fa-solid fa-suitcase-rolling"></i></span>
+                                        <span class="radio-control" id="suitcase"><i class="fa-solid fa-suitcase-rolling"></i></span>
                                     </span>
                                 </label>
                                 <label for="radio-before">
                                     <span class="radio-input">
                                         <input type="radio" id="gift" class="Icon" name="projectFormIcon" value="gift">
-                                        <span class="radio-control"><i class="fa-solid fa-gift"></i></span>
+                                        <span class="radio-control" id="gift"><i class="fa-solid fa-gift"></i></span>
                                     </span>
                                 </label>
+                            </div>
+                        </div>
+                        <div class="modal-task-div">
+                            <div class="task-description-area">
+                                <label for="task-description">Description</label>
+                                <textarea class="task-description" rows="3" cols="36"></textarea>
+                            </div>
+                            <div class="task-due-date-area">
+                                <label for="task-due-date">Due Date</label>
+                                <input type="date" name="task-due-date" id="task-due-date">
+                            </div>
+                            <div>
+                                <label for="priority">Priority</label>
+                                <select name="priority"  class="task-priority">
+                                    <option value disabled selected>How important is this task?</option>
+                                    <option value="low">Not important at all..</option>
+                                    <option value="medium">A bit important</option>
+                                    <option value="high">Super important</option>
+                                </select>
                             </div>
                         </div>
                         <div class="modal-buttons">
@@ -135,7 +184,6 @@
                         </div>
                     </form>
                 </div>
-    
             </div>
         </div>
     </div>

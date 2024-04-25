@@ -18,6 +18,10 @@
     box-sizing: border-box;
 }
 
+ body{
+    color: var(--dark-grey);
+ }
+
 .content {
     height: 100vh;
     width: 100vw;
@@ -183,7 +187,7 @@ footer{
     color: var(--dark-grey);
 }
 
-#modal-title{
+form input, .task-description, .task-priority{
     width: 100%;
     margin: 5px 0 20px 0;
     padding: 10px;
@@ -251,4 +255,20 @@ footer{
 .modal-add{
     background: var(--light-aqua);
     color: var(--white);
+}
+
+/* info */
+.info-div div{
+    display: flex;
+    padding:10px;
+    border-bottom: 1px solid var(--grey);
+}
+
+.info-div div p {
+    width: ;
+}
+
+/* hide */
+.hide{
+    display: none;
 }
